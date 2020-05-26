@@ -1,0 +1,47 @@
+/******************************************************************************
+ 
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+C#, VB, Perl, Swift, Prolog, Javascript, Pascal, HTML, CSS, JS
+Code, Compile, Run and Debug online from anywhere in world.
+ 
+*******************************************************************************/
+#include <stdio.h>
+ 
+int main()
+{
+  int yagami;
+  scanf("%d",&yagami);
+  int dead[yagami];
+  int note[yagami];
+  int light[yagami];
+  for(int i=0;i<yagami;i++)
+  {
+      scanf("%d",&dead[i]);
+      scanf("%d",&note[i]);
+      if(dead[i]<note[i])
+      {
+          int temp = dead[i];
+          dead[i]=note[i];
+          note[i]=temp ;
+      }
+  }
+   for(int i=0;i<yagami;i++)
+  {
+   if(dead[i]==note[i])
+    {
+        light[i] = dead[i]*4*dead[i];
+    }else if(dead[i]/2>=note[i])
+    {
+             light[i] = dead[i]*dead[i];
+ 
+    }
+    else
+    {
+ 
+   light[i] = 4*note[i]*note[i];    }
+   printf("%d\n",light[i]);
+  }
+  
+  
+}
