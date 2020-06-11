@@ -1,0 +1,2 @@
+XML is used in an app’s main configuration file—AndroidManifest.xml.
+XML is used is for defining application layouts.

@@ -1,0 +1,5 @@
+Apps
+Java API framework
+Libraries and Android Runtime
+Hardware abstraction layer (HAL)
+Linux kernel
