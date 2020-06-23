@@ -1,0 +1,5 @@
+Inspect the code in main.js. Notice the different methods being called on the arrays:
+
+.forEach()
+.map()
+.filter()
